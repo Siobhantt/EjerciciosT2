@@ -53,9 +53,8 @@ public class Ejercicio01 {
 			
 		}
 	
-		
-		
-		
+		//cerramos el scanner
+		lee.close();
 		
 	}
 		
