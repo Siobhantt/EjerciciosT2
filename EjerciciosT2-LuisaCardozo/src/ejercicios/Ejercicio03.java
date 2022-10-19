@@ -38,8 +38,8 @@ Diseña un programa que solicite al usuario los valores anteriores
 			System.out.println("Como no hay suficiente comida a cada animal le corresponde: " + (comidaComprada / nAnimales) + "kg");
 		}
 		
-		
-
+		//cerramos el scanner
+		lee.close();
 	}
 
 }
