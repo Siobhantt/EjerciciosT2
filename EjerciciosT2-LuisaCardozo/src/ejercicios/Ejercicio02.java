@@ -1,5 +1,5 @@
 package ejercicios;
-
+/*Las pruebas que he realizado han sido : 29504688, 67*/
 import java.util.Scanner;
 
 public class Ejercicio02 {
@@ -17,9 +17,11 @@ public class Ejercicio02 {
 		
 		/*Verificamos que el usuario introduzca un numero correcto poniendo como tope 99999999*/
 		
-		if (dniUser>99999999 && dniUser<10000000) {
+		if (dniUser>99999999 || dniUser<10000000) {
 			System.out.println("El numero de dni es incorrecto.");
-		}
+		
+	}
+		else {
 		
 		switch (dniUser%23) {
 		
@@ -103,9 +105,9 @@ public class Ejercicio02 {
 		default -> {
 			System.out.println("Error, introduzca el numero correctamente");
 		}
-		
+		}
+		}
 
-	}
 //cerramos el scanner
 		lee.close();
 }

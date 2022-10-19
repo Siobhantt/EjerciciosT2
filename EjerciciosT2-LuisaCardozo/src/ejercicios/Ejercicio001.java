@@ -23,13 +23,13 @@ public class Ejercicio001 {
 		unidad = numUser%10;
 		
 		/*para conseguir la decena dividimos el numero introducido entre 10*/
-		decena = numUser/10;
+		decena = (numUser/10)%10;
 		
 		/*para conseguir la centena dividimos el numero introducido entre 100 y a eso le sacamos el modulo 10*/
 		centena = (numUser/100)%10;
 		
 		/*para conseguir el millar dividimos el numero introducido entre 1000*/
-		millar = numUser/1000;
+		millar = (numUser/1000)%10;
 		
 		//establecemos el limite en el que el usuario debe introducir los numeros
 		
@@ -37,6 +37,8 @@ public class Ejercicio001 {
 			System.out.println("ERROR! Por favor introduzca un numero entre 0 y 9999");
 		}
 		
+		else {
+
 		if (numUser <=9) {
 			System.out.println("El numero es capicua.");
 		}
@@ -59,6 +61,7 @@ public class Ejercicio001 {
 		//cerramos el scanner
 		lee.close();
 		}
+	}
 	}
 
 
