@@ -1,5 +1,8 @@
 package ejercicios;
-
+/*Las pruebas que he realizado han sido con los numeros:
+ * -546
+ * 2
+ * */
 import java.util.Scanner;
 
 public class Ejercicio05 {

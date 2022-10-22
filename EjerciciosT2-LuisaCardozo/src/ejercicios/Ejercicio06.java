@@ -1,4 +1,9 @@
 package ejercicios;
+/*Las pruebas que he realizado han sido con los numeros:
+ * 39
+ * 6
+ * 78
+ * 82*/
 
 import java.util.Scanner;
 
@@ -10,7 +15,8 @@ public class Ejercicio06 {
 	public static void main(String[] args) {
 		
 		//declaramos las variables 
-		int num1,num2, respuestaUser; //num1 y num2 son los dos numeros que el usuario tendrá que sumar
+		int num1,num2, respuestaUser; /*num1 y num2 son los dos numeros que el usuario tendrá que sumar
+		en respuestaUser guardaremos la respuesta del usuarioxd*/
 		
 		//iniciamos el scanner
 		Scanner lee = new Scanner(System.in);
@@ -19,8 +25,9 @@ public class Ejercicio06 {
 		num1 = (int)(Math.random()*99);
 		num2 = (int)(Math.random()*99);
 		
-		//Mostramos el inicio del juego y los dos numeros a suma
-		System.out.println("Este es el juego de la suma! Debe introducir la suma de los 2 numeros que aparecerán: " + num1 + " + " + num2);
+		//Mostramos el inicio del juego y los dos numeros que el usuario debe sumar
+		System.out.println("Este es el juego de la suma!"); 
+		System.out.println("Cual es el resultado de sumar " + num1 + " + " + num2 + "?");
 		
 		//Guardamos la respuesta en la variable 
 		respuestaUser = lee.nextInt();

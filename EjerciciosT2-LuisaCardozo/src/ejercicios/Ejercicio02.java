@@ -1,5 +1,10 @@
 package ejercicios;
-/*Las pruebas que he realizado han sido : 29504688, 67*/
+/*Las pruebas que he realizado han sido con los numeros: 
+ * 6277465 
+ * 29504688
+ * 67
+ * 5
+ * 26386973*/
 import java.util.Scanner;
 
 public class Ejercicio02 {
@@ -9,22 +14,26 @@ public class Ejercicio02 {
 		
 		int dniUser;
 		
-		//iniciamos el scanner y leemos el numero de 8 digitos que introducirá el usuario
+		//iniciamos el scanner 
 		
 		Scanner lee = new Scanner (System.in);
+		
+		//leemos el numero de 8 digitos que introducirá el usuario
 		System.out.println("Por favor introduzca su numero de DNI, solo los numeros: ");
+		System.out.println("El numero de DNI debe contener 8 digitos!");
 		dniUser = lee.nextInt();
 		
-		/*Verificamos que el usuario introduzca un numero correcto poniendo como tope 99999999*/
+		/*Verificamos que el usuario introduzca un numero correcto poniendo como minimo 10000000 y como tope 99999999*/
 		
 		if (dniUser>99999999 || dniUser<10000000) {
 			System.out.println("El numero de dni es incorrecto.");
-		
 	}
+		/*Ahora en un switch hacemos un modulo 23 del numero introducido por el usuario*/
 		else {
 		
 		switch (dniUser%23) {
 		
+		/*A cada posible caso le asignamos la letra correspondiente a la tabla que nos han dado*/
 		case 0 -> {
 			System.out.println(dniUser + "T");
 		}
@@ -102,11 +111,12 @@ public class Ejercicio02 {
 		case 22 -> {
 			System.out.println(dniUser + "E");
 		}
+		/*Establecemos el default por cualquier cosa que salga de los 23 casos */
 		default -> {
 			System.out.println("Error, introduzca el numero correctamente");
 		}
-		}
-		}
+	}
+}
 
 //cerramos el scanner
 		lee.close();
